@@ -8,6 +8,10 @@ train_set_y = h5read('train_catvnoncat.h5','/train_set_y');
 test_set_x_orig = h5read('test_catvnoncat.h5','/test_set_x');
 test_set_y = h5read('test_catvnoncat.h5','/test_set_y');
 
+%% Save the datasets
+% save datasets train_set_x_orig train_set_y test_set_x_orig test_set_y
+
+
 %% Check the size of the datasets
 %train_set_size = size(train_set_x_orig);
 
@@ -15,7 +19,7 @@ test_set_y = h5read('test_catvnoncat.h5','/test_set_y');
 % We want it to actually be [R G B image_index]
 % This suggests there's some reshaping to be done
 
-%% Re-shape the dataset
+%% Re-shape the dataset JUST for VIEWING
 train_set_x_orig = permute(train_set_x_orig,[3 2 1 4]);
 test_set_x_orig = permute(test_set_x_orig,[3 2 1 4]);
 
@@ -35,8 +39,3 @@ end
 
 % Added title to display label
 title(s);
-
-%% Save the datasets
-% save datasets train_set_x_orig train_set_y test_set_x_orig test_set_y
-
-
