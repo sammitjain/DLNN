@@ -36,4 +36,7 @@ end
 % Added title to display label
 title(s);
 
+%% Save the datasets
+% save datasets train_set_x_orig train_set_y test_set_x_orig test_set_y
+
 
