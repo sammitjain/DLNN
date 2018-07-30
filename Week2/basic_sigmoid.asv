@@ -1,0 +1,3 @@
+function s = basic_sigmoid(x)
+    
+end
