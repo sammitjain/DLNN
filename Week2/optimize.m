@@ -12,7 +12,7 @@ function [w,b,dw,db,costs] = optimize(w,b,X,Y,num_iterations,learning_rate,print
        end
        
        if(print_cost && mod(i,100)==0)
-           fprintf('Cost after iteration %d: %f',i,cost);
+           fprintf('Cost after iteration %d: %f\n',i,cost);
        end
        
    end

@@ -1,8 +1,0 @@
-function [dw,db,cost] = propagate(w,b,X,Y)
-    % Forward Propagation
-    A = sigmoid(w'*X + b);
-    cost = (-1/m)*(sum(Y.*log(A) + (1-Y).*log(1-A)));
-    
-    % Backward Propagation
-    dw = (1/m)*(X*(A-Y)');
-end
